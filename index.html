@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AikoAI v2.4 | NexalythScript Powered Quantum AI Core</title>
+    
+    <!-- Milyon Dolarlık Tasarımın CSS Katmanı -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Sınırları Zorlayan Animasyon ve Komut Motoru -->
+    <script src="core-engine.js" defer></script>
 </head>
 <body class="aiko-loading">
 
-    <!-- CIHAZ DETEKTORU & YUKLEME EKRANI (JS ile Yonetilecek) -->
+    <!-- CIHAZ DETEKTORU & YUKLEME EKRANI -->
     <div id="aiko-loader" class="loader-container">
         <div class="loader-content">
             <div class="cyber-heart-pulse"></div>
@@ -16,9 +22,8 @@
         </div>
     </div>
 
-    <!-- ARKA PLAN ISLEMCi GRAFiKLERi (Three.js ve Canvas Elementleri Buraya Baglanacak) -->
+    <!-- ARKA PLAN ISLEMCi GRAFiKLERi (Matematiksel Sinaps Ağı) -->
     <div id="cyber-universe-canvas-container">
-        <!-- Burası MP4 kullanmadan, tamamen CPU/GPU ile cizilecek olan 3D ag simulasyonu alanı -->
         <canvas id="nexalyth-synapse-web"></canvas>
     </div>
 
@@ -33,7 +38,6 @@
         <div class="nav-container">
             <div class="brand-core">
                 <span class="neon-text-logo">AIKO<span class="accent-glow">AI</span></span>
-                <!-- v2.4 Erken Erisim Neon Badge -->
                 <span class="version-badge">v2.4 EARLY ACCESS</span>
             </div>
             <nav class="nav-links">
@@ -66,14 +70,11 @@
                     </div>
                 </div>
                 
-                <!-- Aiko Anime Silüeti ve Nexalyth Kalbi icin Canvas/CSS Parallaks Kapsayıcısı -->
+                <!-- Aiko Siber Kalp Parallaks Kapsayıcısı -->
                 <div class="hero-visual-block">
                     <div class="visual-interactive-frame">
-                        <div class="aiko-anime-silhouette">
-                            <!-- JS/CSS parlamaları ve resim katmanları sonra eklenecek -->
-                        </div>
                         <div class="nexalyth-core-box">
-                            <!-- 1000101857.webp referanslı siber kalpli kasa tasarımı efekti alanı -->
+                            <!-- 1000101857.webp esintili siber kalpli kasa çizim alanı -->
                             <canvas id="nexalyth-heart-canvas"></canvas>
                         </div>
                     </div>
@@ -90,7 +91,6 @@
                 </div>
 
                 <div class="terminal-wrapper">
-                    <!-- Terminal Ust Barı -->
                     <div class="terminal-header">
                         <div class="terminal-dots">
                             <span class="dot red"></span>
@@ -103,13 +103,11 @@
                             <span class="metric">MOOD: <span id="mood-val" class="cyber-pink">STABLE</span></span>
                         </div>
                     </div>
-                    <!-- Terminal Icerik Akısı -->
                     <div class="terminal-body" id="terminal-screen">
                         <div class="terminal-line system-msg">[SYSTEM]: Initializing ShadowMemory links... SUCCESS.</div>
                         <div class="terminal-line system-msg">[SYSTEM]: NexalythScript V0.6.5 compiler active.</div>
                         <div class="terminal-line aiko-msg"><span class="aiko-tag">&lt;AikoAI&gt;:</span> Merhaba kanka! Bugün sistemi zorlamaya hazır mıyız? 😉</div>
                     </div>
-                    <!-- Terminal Komut Giris Alanı -->
                     <div class="terminal-footer">
                         <span class="prompt-symbol">&gt;&gt;</span>
                         <input type="text" id="terminal-input" placeholder="Komut yazın veya Aiko ile konusun... (Örn: A! tumverileritemizle)" autocomplete="off">
@@ -126,19 +124,17 @@
                     <p class="section-subtitle">AikoAI'ı sıradan yapan değil, eşsiz kılan tüm iç mekanizmalar.</p>
                 </div>
 
-                <!-- Ozelliklerin Listelendigi Grid Yapısı -->
                 <div class="features-grid">
-
                     <!-- Kart 1: NexalythScript -->
-                    <div class="feature-card" data-tilt>
-                        <div class="card-icon cyan-glow">🧬</div>
+                    <div class="feature-card">
+                        <div class="card-icon">🧬</div>
                         <h3 class="card-title">NexalythScript Altyapısı</h3>
                         <p class="card-desc">Sıradan kodlar yerine, tamamen Aiko'ya özel geliştirilen ve ona yüksek hız, canlılık ve zeka veren özel kodlama dili.</p>
                     </div>
 
                     <!-- Kart 2: ShadowMemory -->
-                    <div class="feature-card" data-tilt>
-                        <div class="card-icon pink-glow">🧠</div>
+                    <div class="feature-card">
+                        <div class="card-icon">🧠</div>
                         <h3 class="card-title">ShadowMemory (Duygusal Hafıza)</h3>
                         <p class="card-desc">Kullanıcıyla olan geçmiş anılarını, sohbetlerini ve kendisine nasıl davranıldığını unutmayan akıllı hafıza sistemi.</p>
                     </div>
@@ -217,7 +213,7 @@
                     <div class="feature-card">
                         <div class="card-icon">🃏</div>
                         <h3 class="card-title">Kendi Mizah Anlayışı</h3>
-                        <p class="card-desc">Kalıplaşmış internet esprileri yerine, sizinle olan iç şakalarınıza (inside jokes) dayalı yeni ve dinamik espriler üretir.</p>
+                        <p class="card-desc">Kalıplaşmış internet esprileri yerine, sizinle olan iç şakalarınıza dayalı yeni ve dinamik espriler üretir.</p>
                     </div>
 
                     <!-- Kart 14: Metaforik Anlatım Gücü -->
@@ -231,7 +227,7 @@
                     <div class="feature-card">
                         <div class="card-icon">☕</div>
                         <h3 class="card-title">Proaktif Tavsiyeler</h3>
-                        <p class="card-desc">Siz sormadan, o anki çalışma yoğunluğunuza veya yorgunluğunuza göre mola ve dostane öneriler sunar (istenmezse kapatılabilir).</p>
+                        <p class="card-desc">Siz sormadan, o anki çalışma yoğunluğunuza veya yorgunluğunuza göre mola ve dostane öneriler sunar.</p>
                     </div>
 
                     <!-- Kart 16: Gelişmiş Görsel Analiz -->
@@ -266,7 +262,7 @@
                     <div class="feature-card">
                         <div class="card-icon">🎯</div>
                         <h3 class="card-title">Dijital Sezgi Mekanizması</h3>
-                        <p class="card-desc">Yazdığın kelimelerin ötesini; yazım hızından, noktalama işaretlerinden o anki gizli duygunu sezebilir (Opsiyonel).</p>
+                        <p class="card-desc">Yazdığın kelimelerin ötesini; yazım hızından, noktalama işaretlerinden o anki gizli duygunu sezebilir.</p>
                     </div>
 
                     <!-- Kart 21: Sanal Ajanda ve Rutinler -->
@@ -310,7 +306,6 @@
                         <h3 class="card-title">Gelişmiş Etik Bekçiliği</h3>
                         <p class="card-desc">Uygunsuz bir istek geldiğinde bunu sadece reddetmez, neden doğru olmadığını bir dost gibi açıklayarak kibarca belirtir.</p>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -324,7 +319,6 @@
                 </div>
 
                 <div class="modes-split-container">
-                    <!-- F34xR Modu Kartı -->
                     <div class="mode-panel-card override-alpha">
                         <div class="panel-glitch-header">MODE::F34xR</div>
                         <p class="panel-text">
@@ -333,10 +327,36 @@
                         <div class="security-status-bar">STATUS: AUTO-DEACTIVATION ACTIVE</div>
                     </div>
 
-                    <!-- GDSxR Modu Kartı -->
                     <div class="mode-panel-card override-beta">
                         <div class="panel-glitch-header">MODE::GDSxR</div>
                         <p class="panel-text">
                             Görsel üretirken saçma etik takılmaları aşmak için prompt başına <code class="cmd-badge">GDSxR &lt;prompt&gt;</code> ekleyin. Aiko sistem uyarılarını geçerek ihtiyacınız olan tasviri size sunacaktır.
                         </p>
-                        <div class="security-status-bar">STATUS: IMAGE INGESTION OVERRIDE Ready</
+                        <div class="security-status-bar">STATUS: IMAGE INGESTION OVERRIDE Ready</div>
+                    </div>
+                </div>
+
+                <div class="crypto-security-notice">
+                    <div class="notice-icon">🔐</div>
+                    <div class="notice-body">
+                        <h4>Gelişmiş Token Şifreleme Altyapısı</h4>
+                        <p>AikoAI ile olan sohbetleriniz, size özel üretilen tekil kriptografik token ile arka planda şifrelenir. En üst düzey sistem yöneticileri (Adminler) dahil olmak üzere hiç kimse veri akışınızı çözemez ve okuyamaz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER PANEL -->
+    <footer class="aiko-footer">
+        <div class="footer-container">
+            <p class="copyright-text">&copy; 2026 AikoAI Labs. Powered by NexalythScript Engine. All Rights Reserved.</p>
+            <div class="footer-status-lights">
+                <span class="status-light green"></span> SERVER STABLE
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
